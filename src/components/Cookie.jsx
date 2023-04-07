@@ -1,10 +1,14 @@
 import React from "react";
 import cookieImg from "../assets/cookie.jpg";
 
-const Cookie = (/* {click} */) => {
+const Cookie = ({ setScore }) => {
+  const handleClick = () => {
+    setScore((score) => score + 1);
+  };
+
   return (
-    <button className={"Cookie"}>
-      <img src={cookieImg} height={"100%"} alt="Cookie" /* onClick={click} */ />
+    <button className={"Cookie"} onClick={handleClick}>
+      <img src={cookieImg} height={"100%"} alt="Cookie" />
     </button>
   );
 };
