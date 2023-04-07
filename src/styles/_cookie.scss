@@ -1,0 +1,17 @@
+.Cookie {
+    height: 50vh;
+    position: absolute;
+    /* pour centrer l'image en absolute */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: none;
+    background: transparent;
+    transition: 0.1s;
+
+    /* animation au clic. & indique l'élément sélectionné*/
+    &:active {
+        transform: translate(-50%, -50%) scale(1.1);
+    }
+   
+}
