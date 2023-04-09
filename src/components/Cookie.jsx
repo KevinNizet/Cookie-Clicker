@@ -1,9 +1,10 @@
 import React from "react";
 import cookieImg from "../assets/cookie.jpg";
 
+/* utilisation du state pour mettre à jour le score au moment du clic par l'utilisateur */
 const Cookie = ({ setScore }) => {
   const handleClick = () => {
-    setScore((score) => score + 1);
+    setScore((oldValue) => oldValue + 1);
   };
 
   return (
