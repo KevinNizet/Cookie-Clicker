@@ -1,6 +1,5 @@
 # Cookie-Clicker
-Clone du jeu Cookie Clicker 🍪
-Copie simplifiée du jeu Cooki Cliker. 
+Clone simplifié du jeu Cookie Clicker 🍪
 
 Le but est de générer des cookies à chaque clic de l'utilisateur (incrémentation du nombre).
 Après un certain nombre de cookies, il est posisble d'achter des auto-clickers qui permettent une incrémentation automatique du nombre de cookies. 
