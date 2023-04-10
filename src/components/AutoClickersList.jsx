@@ -45,10 +45,12 @@ const AutoClickersList = ({ score, setCps, setScore }) => {
       autoClickers[indexOfAutoClick].price = autoClickers[indexOfAutoClick].price * 2;
       autoClickers[indexOfAutoClick].nbBought++;
     }
-    if (autoClickers[indexOfAutoClick].nbBought > 0) {
-      autoClickers[indexOfAutoClick].name += "s";
+    if (autoClickers[indexOfAutoClick].nbBought > 0 && (!autoClickers[indexOfAutoClick].name.includes("s"))) {
+      {
+        autoClickers[indexOfAutoClick].name += "s";
+      }
     }
-  };
+  }; 
 
   return (
     <div className="AutoClickersList">
