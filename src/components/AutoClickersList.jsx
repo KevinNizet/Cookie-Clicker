@@ -46,7 +46,7 @@ const AutoClickersList = ({ score, setCps, setScore }) => {
       autoClickers[indexOfAutoClick].nbBought++;
     }
     if (autoClickers[indexOfAutoClick].nbBought > 0) {
-      autoClickers[indexOfAutoClick].name = autoClickers[indexOfAutoClick].name + "s";
+      autoClickers[indexOfAutoClick].name += "s";
     }
   };
 
