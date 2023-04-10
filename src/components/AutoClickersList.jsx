@@ -45,6 +45,9 @@ const AutoClickersList = ({ score, setCps, setScore }) => {
       autoClickers[indexOfAutoClick].price = autoClickers[indexOfAutoClick].price * 2;
       autoClickers[indexOfAutoClick].nbBought++;
     }
+    if (autoClickers[indexOfAutoClick].nbBought > 0) {
+      autoClickers[indexOfAutoClick].name = autoClickers[indexOfAutoClick].name + "s";
+    }
   };
 
   return (
