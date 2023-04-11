@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Cookie from "./components/Cookie.jsx";
 import Counter from "./components/Counter.jsx";
 import AutoClickersList from "./components/AutoClickersList.jsx";
+import Title from "./components/Title.jsx";
 
 function App() {
   const [score, setScore] = useState(0);
@@ -9,7 +10,6 @@ function App() {
 
 
   /* modification du score avec l'ajout du cps aprés achat des autoclickers */
-   /*  configuration du localStorage afin de stocker le score de l'utilisateur dans le cache */
   const generateCookiesEverySecondes = () => {
     setScore((oldScore) => oldScore + cps/10)
   }
@@ -26,6 +26,7 @@ function App() {
 
   return (
     <div className="App">
+      <Title/>
       <Cookie setScore={setScore} />
       <Counter score={score} cps={cps} />
       <AutoClickersList score={score} setCps={setCps} setScore={setScore}/>

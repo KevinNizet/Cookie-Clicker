@@ -19,8 +19,8 @@ const AutoClickers = ({ autoClicker, onClick }) => {
         {/* Pour l'icone, il faut appeller ici le compostant Icon défini plus haut */}
         {autoClicker.nbBought} <Icon /> {autoClicker.name}
       </p>
-      <p>{autoClicker.price} cookies</p>
-      <span>{autoClicker.cps} cps</span>
+      <p>{autoClicker.price} cookies 🍪</p>
+      <span>{autoClicker.cps} cps ✨</span>
     </div>
   );
 };

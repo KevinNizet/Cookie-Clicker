@@ -7,7 +7,7 @@ const Counter = ({ score, cps }) => {
         <p>
           <span>{score} cookies </span>
           <br />
-          {cps} cps
+          {cps} cps ✨
         </p>
       </div>
     </>
