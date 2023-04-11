@@ -1,11 +1,3 @@
-/* .Title {
-    color: white;
-    font-size: 40px;
-    width: 100%;
-    text-align: center;
-    padding-top: 50px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-} */
 .Title {
     text-align: center;
     position: relative;
@@ -17,25 +9,24 @@
 
     color: #e0eff2;
     font: italic bold 50px Georgia, Serif;
-    text-shadow: -4px 3px 0 #3a50d9, -14px 7px 0 #0a0e27;
     color: white;
     
-    /* Clip Background Image */
+    /* Background Image */
     background: url(https://i.ibb.co/RDTnNrT/animated-text-fill.png) repeat-y;
     -webkit-background-clip: text;
     background-clip: text;
     
-    /* Animate Background Image */
+    /* Animation Background Image */
     -webkit-text-fill-color: transparent;
     animation: aitf 80s linear infinite;
     
-    /* Activate hardware acceleration for smoother animations */
+    /* hardware acceleration pour animations plus */
     transform: translate3d(0, 0, 0);
     backface-visibility: hidden;
     
     @keyframes aitf {
     0% {
-    background-position: 0% 50%;
+    background-position: 0% 50%; 
     }
     100% {
     background-position: 100% 50%;
